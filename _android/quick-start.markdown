@@ -159,26 +159,24 @@ The API Key and APP key will be provided by your contact person at XappMedia.
 
 ```java
  xappAds = new XappAds();
- xappAds.start("apiKey", "appKey", userData /** or null */, location /** or null */, <yourContext>, <yourXappAdsListener>);
+ xappAds.start("71bd5a9b-4465-4677-8b22-708673d89037", "93659f7e-0384-4938-bff3-87dea0851cad", userData /** or null */, location /** or null */, <yourContext>, <yourXappAdsListener>);
 ```
 
-The last parameter to the start call is the instance that implements xappmedia.sdk.XappAdsListener, which is assumed to be the calling class.
+The last parameter to the start call is the instance that implements `XappAdsListener`, which is assumed to be the calling class.  Wait for `XappAdsListener` method `onXappAdsStarted` to request an ad.
 
 ## Request an Ad
 
-
-
-##  Close up the SDK when you're done:
+Request an ad:
 
 ```java
-@Override
-protected void onDestroy() {
-    super.onDestroy();
-    xappAds.terminate();
-}
+//Request an ad once XappAds has been initialized
+AdRequest adRequest = new AdRequest();
+xappAds.requestAd(adRequest);
 ```
 
-## Important Notes
+The `XappAdsListener` method `onAdRequestCompleted` will be called when the ad is ready for playback.
+
+# Important Notes
 
 It is important that the Context and `XappAdsListener` provided are
 fresh when you use the SDK. If either of these would be destroyed
