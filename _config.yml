@@ -1,12 +1,12 @@
 # Site settings
-title: Developer
+title: Developer Documentation
 email: support@xappmedia.com
 description: > # this means to ignore newlines until "baseurl:"
   Documentation for all XAPPmedia developer products
-baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://developer.xappmedia.com" # the base hostname & protocol for your site
 twitter_username: xappmedia
 github_username:  xappmedia
+source_repository: https://github.com/XappMedia/Documentation
 
 # API Variables
 ios_api_current: /ios/api
