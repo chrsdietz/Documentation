@@ -1,0 +1,14 @@
+---
+layout: master-layout
+---
+<div class="guide-header-wrapper" {% if page.header_background_color %} style="background-color:{{page.header_background_color}};" {% endif %}>
+   <div class="container">
+     <h1 class="guide-header">{{page.title}}</h1>
+     <ul class="list-inline">
+       {% for category in page.categories %}
+        <li><span class="label label-default">{{category}}</span></li>
+       {% endfor %}
+   </div>
+</div>
+
+{{ content }}

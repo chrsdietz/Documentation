@@ -1,0 +1,55 @@
+
+.title-wrapper {
+  font-size: 1.4em;
+  margin-top: 10px;
+}
+
+.title-header-developer {
+  color: $xapp-green;
+}
+
+.title-header-at {
+  color: $xapp-blue;
+}
+
+.title-header-xappmedia {
+  color: $xapp-magenta;
+}
+
+.title-header-tilde {
+  color: white;
+}
+
+.title-header-money {
+  color: $xapp-blue;
+}
+
+.title-typed {
+  color:$grey-color-light;
+}
+
+/**
+ * For typed.js
+ */
+.typed-cursor{
+    color: $grey-color-light;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}

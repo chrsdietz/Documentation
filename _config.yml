@@ -1,0 +1,32 @@
+# Site settings
+title: Developer
+email: support@xappmedia.com
+description: > # this means to ignore newlines until "baseurl:"
+  Documentation for all XAPPmedia developer products
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://developer.xappmedia.com" # the base hostname & protocol for your site
+twitter_username: xappmedia
+github_username:  xappmedia
+
+# API Variables
+ios_api_current: /ios/api
+android_api_current: /android/api
+
+# Collections
+collections:
+  authors:
+    output: true
+  ios:
+    output: true
+  android:
+    output: true
+  guides:
+    output: true
+
+markdown: redcarpet
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
+
+permalink: pretty
+
+redcarpet:
+  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]

@@ -1,0 +1,7 @@
+<ul>
+  {% for doc in site.collections[page.collection].docs %}
+    {% if doc.url != page.url %}
+    <li><a href={{doc.url}}> {{doc.title}}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
