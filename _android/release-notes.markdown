@@ -27,7 +27,7 @@ title: XAPP SDK Android Release Notes
 
 *  Back pressed fixes
 *  OOM Fixes for large images on old devices
-*  Crash Fixes for API 25
+*  Crash fixes for Samsung S5
 *  New Obfuscation work
 *  Custom Cue implementation
 
