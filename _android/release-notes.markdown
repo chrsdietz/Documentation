@@ -3,6 +3,14 @@ layout: page
 title: XAPP SDK Android Release Notes
 ---
 
+### 3.8.11
+
+* Optional Call Permission
+
+### 3.8.10
+
+* Unobfuscated AdImage
+
 ### 3.8.9
 
 *  Updates to Voice/Touch Click Reporting
