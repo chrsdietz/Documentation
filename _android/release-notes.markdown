@@ -6,11 +6,11 @@ title: XAPP SDK Android Release Notes
 
 * Added app licensing to the Java Docs
 * Added licensing information to the JAR
-* build simplification in build.gradle around the way we build the jar
-* code coverage enabled
+* Build simplification in build.gradle around the way we build the JAR
+* Code coverage enabled
 * Major microphone animation improvements on many devices
-* Properly reports versions 
-* 
+* Properly reports versions
+
 ### 3.9.0
 
 * Updated many of the examples to include Service and Lifecycle best practices.
