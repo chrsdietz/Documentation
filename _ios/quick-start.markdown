@@ -40,7 +40,7 @@ For your build target, make sure the XappAds.framework is included under 'Link B
  *  SystemConfiguration.framework
 
 # Basic Usage
-In addition to these basic usage instructions, please see the complementary the example code.
+In addition to these basic usage instructions, please see the example code.
 
 ## Implement the Delegate
 
