@@ -6,18 +6,15 @@ categories:
   - Quick Start
 ---
 
+<div class="alert alert-warning" role="alert">
+  <b>Xcode 7 & iOS 9</b> If you are compiling with Xcode 7 and iOS 9, please see the <a href="/ios/preparing-for-ios-9.html">necessary additional instructions</a>
+</div>
+
 # Adding XappAds to your Project
 
 ## Cocoapods
 
-Add the following to your Podfile to resolve the private repository:
-
-```ruby
-source 'https://github.com/CocoaPods/Specs.git'
-source 'https://github.com/XappMedia/XM-Private-Specs'
-```
-
-Then add the pod to the desired target:
+Add the pod to the desired target:
 
 ```ruby
 pod 'XappAds'
@@ -43,7 +40,7 @@ For your build target, make sure the XappAds.framework is included under 'Link B
  *  SystemConfiguration.framework
 
 # Basic Usage
-In addition to these basic usage instructions, please see the complementary the example code.
+In addition to these basic usage instructions, please see the example code.
 
 ## Implement the Delegate
 

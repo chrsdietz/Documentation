@@ -19,7 +19,7 @@ NSURLSession/NSURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9802)
 
 and requests for interactive audio will fail with an error.  
 
-As of iOS 9, Apple is requiring all web services calls be secure.  We already leverage HTTPS/TLS 1.2 & SHA 256 however our primary CDN is not yet in full compliance with the ATS specifications.  Our CDN expects to resolve this shortly.  
+As of iOS 9, Apple is requiring all web services calls be secure.  We already leverage HTTPS/TLS 1.2 & SHA 256 however our primary CDN is not yet in full compliance with the ATS specifications.  We are actively working on compliance.  
 
 Until then, you will need to modify your app's info.plist with the following:
 
