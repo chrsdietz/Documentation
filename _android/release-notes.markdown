@@ -14,9 +14,9 @@ title: XAPP SDK Android Release Notes
 ### 3.9.0
 
 * Updated many of the examples to include Service and Lifecycle best practices.
-* Made InAppBrowser zoomable, and added zoom conttrols.
+* Made InAppBrowser zoomable, and added zoom controls.
 * Added DFP Targeting Parameter abilities
-* Fixed a number of bugs in the DFP implementaitons
+* Fixed a number of bugs in the DFP implementations
 * Fixed a bug with AudioRouteName not being populated correctly.
 
 ### 3.8.11
