@@ -49,6 +49,13 @@ H3s are not placed in the side navigation bar but still have anchor tags.
 
 H4s are also not placed in the side navigation bar but still have anchor tags.
 
+
+# Alerts
+
+<div class="alert alert-info" role="alert">
+  <b>Note:</b> Info Level
+</div>
+
 # Code
 
 Code blocks can be designated by either inline with backticks: `` `code` `` or blocks surrounded by three backticks ```` ``` ````.  The language type can be included to provide syntax highlighting, for example ```` ```java ````.
