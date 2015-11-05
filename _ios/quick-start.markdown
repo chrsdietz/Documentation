@@ -10,14 +10,7 @@ categories:
 
 ## Cocoapods
 
-Add the following to your Podfile to resolve the private repository:
-
-```ruby
-source 'https://github.com/CocoaPods/Specs.git'
-source 'https://github.com/XappMedia/XM-Private-Specs'
-```
-
-Then add the pod to the desired target:
+Add the pod to the desired target:
 
 ```ruby
 pod 'XappAds'
