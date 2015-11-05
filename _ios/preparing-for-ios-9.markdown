@@ -33,9 +33,11 @@ Until then, you will need to modify your app's info.plist with the following:
 
 ## App Thinning & Bitcode
 
-Apple is optimizing how apps are compiled and distributed through app thinning features that will reduce the overall size and foot print of apps.  
+As of 3.10.0, we support `ENABLE_BITCODE=YES`.  We will continue to compile "thick" versions without bitcode for the immediate future.  
 
-With the official release of iOS 9 and Xcode 7, we will put out a build that supports bitcode however until then you will need to set the compiler flag `ENABLE_BITCODE=NO`
+~~Apple is optimizing how apps are compiled and distributed through app thinning features that will reduce the overall size and foot print of apps.~~  
+
+~~With the official release of iOS 9 and Xcode 7, we will put out a build that supports bitcode however until then you will need to set the compiler flag `ENABLE_BITCODE=NO`~~
 
 ## Additional Reading
 
