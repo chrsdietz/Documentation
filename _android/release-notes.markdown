@@ -2,12 +2,21 @@
 layout: page
 title: XAPP SDK Android Release Notes
 ---
+### 3.10.0
+
+* Added app licensing to the Java Docs
+* Added licensing information to the JAR
+* Build simplification in build.gradle around the way we build the JAR
+* Code coverage enabled
+* Major microphone animation improvements on many devices
+* Properly reports versions
+
 ### 3.9.0
 
 * Updated many of the examples to include Service and Lifecycle best practices.
-* Made InAppBrowser zoomable, and added zoom conttrols.
+* Made InAppBrowser zoomable, and added zoom controls.
 * Added DFP Targeting Parameter abilities
-* Fixed a number of bugs in the DFP implementaitons
+* Fixed a number of bugs in the DFP implementations
 * Fixed a bug with AudioRouteName not being populated correctly.
 
 ### 3.8.11
