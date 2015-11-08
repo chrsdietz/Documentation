@@ -1,7 +1,16 @@
-<ul>
-  {% for doc in site.collections[page.collection].docs %}
-    {% if doc.url != page.url %}
-    <li><a href={{doc.url}}> {{doc.title}}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
+<div class="list-group">
+{% for collection in site.collections %}
+  {% if collection.label == page.collection %}
+    {% for doc in collection.docs %}
+      {% if doc.url != page.url %}
+        <a href="{{doc.url}}" class="list-group-item">
+          <h4 class="list-group-item-heading">{{doc.title}}</h4>
+          {% if doc.summary %}
+          <p class="list-group-item-text">{{doc.summary}}</p>
+          {% endif %}
+        </a>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+</div>
