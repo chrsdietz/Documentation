@@ -8,12 +8,12 @@
 
 <!-- The static helpers -->
 <script>
+//This provides the terminal typing at the top.
 $(function(){
         $(".title-typed").typed({
-            strings: ["{{page.title}}"],
+            strings: ["{{page.title}}".replace(/\s+/g, '-').toLowerCase()],
             typeSpeed: 75
         });
     });
-
 </script>
 <script src="/js/guide-help.js"></script>
