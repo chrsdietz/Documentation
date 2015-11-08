@@ -5,8 +5,19 @@ To contribute, please read the [contribution instructions](https://github.com/Xa
 
 ### Development Dependencies
 
-* Jekyll http://jekyllrb.com/
-* Bower http://bower.io/
+* [Jekyll](http://jekyllrb.com/) 3.0 - http://jekyllrb.com/docs/installation/
+  * `$ gem install jekyll`
+* [RedCarpet](https://github.com/vmg/redcarpet)
+  * `$ gem install redcarpet`
+* [Bower](http://bower.io/) - http://bower.io/#install-bower
+  * `$ npm install -g bower`
 
+### Workspace Setup
 
+Install dependencies
 
+`$ bower install`
+
+Run Jekyll
+
+`$ jekyll serve`
