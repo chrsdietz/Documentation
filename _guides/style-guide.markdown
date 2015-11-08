@@ -72,7 +72,7 @@ if (context == null) {
 ```
 
 ## Objective-C
-```objective-c
+```objc
 //Objective-C code block
 #import <UIKit/UIKit.h>
 
