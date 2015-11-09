@@ -1,6 +1,8 @@
 ---
 layout: page
 title: XAPP SDK Android Release Notes
+categories:
+  - Android
 ---
 ### 3.10.0
 

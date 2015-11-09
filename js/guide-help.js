@@ -2,6 +2,7 @@ var guideHelp = {
   onReady: function() {
     //Add anchors to all the headers in the article section
     anchors.add('article h1, article h2, article h3, article h4');
+    anchors.remove('.list-group-item-heading'); //but not on the list group headers
 
     //Build up a list of all the anchors
     var sidebarListItems = []

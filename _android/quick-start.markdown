@@ -1,6 +1,9 @@
 ---
 layout: page-with-sidebar
 title: Quick Start
+summary: Everything you need to know to serve a XAPP on Android
+categories:
+  - Android
 ---
 
 # Adding XappAds to your Project

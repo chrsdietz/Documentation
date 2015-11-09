@@ -4,7 +4,6 @@ title: Audio Sessions
 categories:
  - iOS
  - AudioSession
- - Audio
 ---
 
 # Recommended Audio Session Settings

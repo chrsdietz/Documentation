@@ -1,6 +1,8 @@
 ---
 layout: page
 title: XAPP SDK iOS Release Notes
+categories:
+  - iOS
 ---
 
 ## 3.11.1-thick (10-28-2015)
