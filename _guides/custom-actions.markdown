@@ -9,11 +9,11 @@ categories:
 
 # What are custom actions?
 
-Custom actions provide a way to pass predefined metadata to your app that is triggered a users voice response.  The metadata is passed back at the end of the XAPP playback.  When building the XAPP, a phrase is selected and the metadata is then added for that phrase.  
+Custom actions enable host app functionality to be executed via voice.  A custom action is defined by a phrase and corresponding metadata.  If the predefined phrase is recognized, the metadata is passed back at the end of the XAPP playback.  It can then be parsed and handled accordingly.   
 
 ## Example Usage
 
-Custom actions enable host app functionality to be executed via voice.  Most functions of a host app can be executed through custom actions.  Some examples include but are not limited to the following:
+Most functions of a host app can be executed through custom actions.  Some examples include but are not limited to the following:
 
 #### Play Content
 <blockquote>
@@ -25,7 +25,7 @@ Custom actions enable host app functionality to be executed via voice.  Most fun
 </blockquote>
 #### Add to Favorites
 <blockquote>
-  <p>To favorite the Chill Evenings playlist, after the beep… say, “Add to Favorites”</p>
+  <p>To favorite this playlist, after the beep… say, “Add to Favorites”</p>
 </blockquote>
 #### Start Free Trial
 <blockquote>
@@ -41,7 +41,7 @@ Custom actions enable host app functionality to be executed via voice.  Most fun
 </blockquote>
 #### Social Share
 <blockquote>
-  <p>To share the Summer Party playlist on Twitter, after the beep… say, “Share On Twitter”</p>
+  <p>To share this playlist on Twitter, after the beep… say, “Share On Twitter”</p>
 </blockquote>
 #### Feature Education
 <blockquote>
