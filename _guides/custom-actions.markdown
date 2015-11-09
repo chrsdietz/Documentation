@@ -9,7 +9,7 @@ categories:
 
 # What are custom actions?
 
-Custom actions enable host app functionality to be executed via voice.  A custom action is defined by a phrase and corresponding metadata.  If the predefined phrase is recognized, the metadata is passed back at the end of the XAPP playback.  It can then be parsed and handled accordingly.   
+Custom actions enable host app functionality to be executed via voice.  A custom action is defined by an action phrase and corresponding metadata.  If the predefined action phrase is recognized, the metadata is passed back at the end of the XAPP playback.  It can then be parsed and handled accordingly.   
 
 ## Example Usage
 
