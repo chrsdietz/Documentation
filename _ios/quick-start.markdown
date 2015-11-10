@@ -7,10 +7,6 @@ categories:
   - Quick Start
 ---
 
-<div class="alert alert-warning" role="alert">
-  <b>Xcode 7 & iOS 9</b> If you are compiling with Xcode 7 and iOS 9, please see the <a href="/ios/preparing-for-ios-9">necessary additional instructions</a>
-</div>
-
 # Adding XappAds to your Project
 
 ## Using Cocoapods
