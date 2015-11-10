@@ -13,7 +13,7 @@ categories:
 
 # Adding XappAds to your Project
 
-## Cocoapods
+## Using Cocoapods
 
 Add the pod to the desired target:
 
@@ -21,24 +21,9 @@ Add the pod to the desired target:
 pod 'XappAds'
 ```
 
-## Drag and Drop
+## Alternate methods
 
-Drag and drop `XappAds.framework` to your project, selecting 'Copy if needed' to make sure it creates a copy and not a reference.
-
-For your build target, make sure the XappAds.framework is included under 'Link Binary With Libraries' on the 'Build Phrases' tab and also add the following dynamic library dependencies:
-
- *  Accelerate.framework
- *  AdSupport.framework
- *  AudioToolbox.framework
- *  AVFoundation.framework
- *  CFNetwork.framework
- *  CoreMotion.framework
- *  CoreTelephony.framework
- *  MediaPlayer.framework
- *  MobileCoreServices.framework
- *  QuartzCore.framework
- *  Security.framework
- *  SystemConfiguration.framework
+See our [guide](/ios/get-the-sdk) for alternate methods for integrating the SDK to your project.
 
 # Basic Usage
 In addition to these basic usage instructions, please see the example code.
