@@ -48,8 +48,6 @@ Add the following permissions, typically right before the `<Application>` tag:
 <uses-permission android:name="android.permission.RECORD_AUDIO" />
 <!--//WRITE_EXTERNAL_STORAGE - Necessary for storing stock audio for XappAds on certain devices-->
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-<!--//GET_TASKS - Necessary for determining if app is in background-->
-<uses-permission android:name="android.permission.GET_TASKS" />
 <!-- Optional -->
 <!--//CALL_PHONE - Necessary to enable "Call Now" actions-->
 <!--<uses-permission android:name="android.permission.CALL_PHONE" /> -->
