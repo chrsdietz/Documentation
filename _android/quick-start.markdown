@@ -54,6 +54,9 @@ Add the following permissions, typically right before the `<Application>` tag:
 <!--//CALL_PHONE - Necessary to enable "Call Now" actions-->
 <!--<uses-permission android:name="android.permission.CALL_PHONE" /> -->
 ```
+<div class="alert alert-info" role="alert">
+  <b>Note:</b> For versions prior to 3.10.2, the GET_TASKS permission is also required.
+</div>
 
 ## Activities
 
