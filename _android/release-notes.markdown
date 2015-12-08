@@ -5,7 +5,7 @@ categories:
   - Android
 ---
 
-### 3.10.2
+### 3.10.2 (12-8-15)
 
 * Removed GET_TASKS permission
 
