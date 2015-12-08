@@ -4,6 +4,15 @@ title: XAPP SDK Android Release Notes
 categories:
   - Android
 ---
+
+### 3.10.2 (12-8-15)
+
+* Removed GET_TASKS permission
+
+### 3.10.1
+
+* Removed PHONE_CALL permission from required to optional
+
 ### 3.10.0
 
 * Added app licensing to the Java Docs

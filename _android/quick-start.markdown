@@ -8,21 +8,16 @@ categories:
 
 # Adding XappAds to your Project
 
-In your `build.gradle`:
+In your `build.gradle`, add the link to our maven repository and add XappAds as a dependency:
 
 ```groovy
 repositories {
     mavenCentral()
-    maven {
-        url "https://repo.xappmedia.com/nexus/content/groups/xapp-android/"
-    }
+    maven { url "https://repo.xappmedia.com/nexus/content/groups/xapp-android/" }
 }
 
 dependencies {
-      compile 'com.xappmedia:xapp-ads:3.10.1'
-      compile 'com.fasterxml.jackson.core:jackson-databind:2.1.4'
-      compile 'com.fasterxml.jackson.core:jackson-core:2.1.4'
-      compile 'com.fasterxml.jackson.core:jackson-annotations:2.1.4'
+      compile 'com.xappmedia:xapp-ads:3.10.2'
 }
 
 ```
