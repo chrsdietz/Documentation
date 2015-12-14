@@ -5,7 +5,15 @@ categories:
   - Android
 ---
 
-### 3.10.2 (12-8-15)
+### 3.10.3 (12-14-2015)
+
+*  XAA-657 Remote Logging URL configurable
+*  Fix for infinite loop that would occur on a failed start
+*  XAA-659 Fix for ad request crash if session doesn't start
+*  XAA-661 Fix for pause, resume, cancel crash when ad not running
+*  XAA-651 Crash when attempting to play null advertisement
+
+### 3.10.2 (12-8-2015)
 
 * Removed GET_TASKS permission
 
