@@ -52,9 +52,36 @@ H4s are also not placed in the side navigation bar but still have anchor tags.
 
 # Alerts
 
-<div class="alert alert-info" role="alert">
-  <b>Note:</b> Info Level
+The [Bootstrap](http://getbootstrap.com/components/#alerts) alerts can be used as is:
+
+<div class="alert alert-success" role="alert">
+  Success Alert
 </div>
+<div class="alert alert-info" role="alert">
+  Info Alert
+</div>
+<div class="alert alert-warning" role="alert">
+  Warning Alert
+</div>
+<div class="alert alert-danger" role="alert">
+  Danger Alert
+</div>
+
+```html
+<div class="alert alert-success" role="alert">
+  Success Alert
+</div>
+<div class="alert alert-info" role="alert">
+  Info Alert
+</div>
+<div class="alert alert-warning" role="alert">
+  Warning Alert
+</div>
+<div class="alert alert-danger" role="alert">
+  Danger Alert
+</div>
+```
+
 
 # Code
 
