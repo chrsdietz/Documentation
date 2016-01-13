@@ -24,6 +24,8 @@ See our [guide](/ios/get-the-sdk) for alternate methods for integrating the SDK 
 # Basic Usage
 In addition to these basic usage instructions, please see the example code.
 
+_For streaming, see [here](/guides/xapp-for-streaming)_
+
 ## Implement the Delegate
 
 Set up an object that implements the XappAdsDelegate protocol.  More often than not this will be your primary UIViewController.  Within the header file (.h), import the delegate from XappAds.framework:
