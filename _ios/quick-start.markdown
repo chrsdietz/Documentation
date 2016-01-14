@@ -41,6 +41,11 @@ Declare that the class implements the XappAdsDelegate protocol:
 Implement the required methods:
 
 ```objective-c
+
+#pragma mark - XappAdsDelegate Methods
+
+#pragma mark - Initialization
+
 - (void)onXappAdsStarted {
     NSLog(@"XappAds started");
 }
@@ -49,6 +54,8 @@ Implement the required methods:
     NSLog(@"XappAds failed %@", error ? [NSString stringWithFormat:@"with error: %@", error.localizedDescription] : @"");
 }
 
+#pragma mark - Ad Requests
+
 - (void)adRequest:(XAAdRequest *)request didFinishLoadWithView:(XAAdView *)view {
     NSLog(@"Ad Request received");
 }
@@ -56,6 +63,13 @@ Implement the required methods:
 - (void)adRequest:(XAAdRequest *)request didFailLoadWithError:(NSError *)error {
     NSLog(@"Ad request failed %@", error ? [NSString stringWithFormat:@"with error: %@", error.localizedDescription] : @"");
 }
+
+#pragma mark - Ad Lifecycle
+
+- (void)adFinishedPlayBack:(XAAdView *)adView withResult:(XAAdResult *)result andError:(NSError *)error {
+    NSLog(@"Ad finished playback");
+}
+
 ```
 
 ## Setup for Deferred Actions
@@ -136,7 +150,7 @@ Or display the ad inside a confined tile:
 }
 ```
 
-Instead of storing the XAAdView locally, you can retreive the next advertisement from XappAds through:
+Instead of storing the XAAdView locally, you can retrieve the next advertisement from XappAds through:
 
 ```objective-c
 if ([XappAds adAvailable]) {
