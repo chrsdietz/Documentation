@@ -136,7 +136,7 @@ Or display the ad inside a confined tile:
 }
 ```
 
-Instead of storing the XAAdView locally, you can retreive the next advertisement from XappAds through:
+Instead of storing the XAAdView locally, you can retrieve the next advertisement from XappAds through:
 
 ```objective-c
 if ([XappAds adAvailable]) {
