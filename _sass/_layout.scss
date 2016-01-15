@@ -55,6 +55,16 @@ li {
 }
 
 /**
+ * Custom alert style
+ */
+
+.alert-sdk-notice {
+  color: black;
+  background-color:$xapp-green;
+  border-color: $xapp-green-dark;
+}
+
+/**
  * Guide Style
  */
 
