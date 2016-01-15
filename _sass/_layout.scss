@@ -55,13 +55,25 @@ li {
 }
 
 /**
+ * Custom alert style
+ */
+
+.alert-sdk-notice {
+  color: black;
+  background-color:$xapp-green;
+  border-color: $xapp-green-dark;
+}
+
+/**
  * Guide Style
  */
 
 .guide-header-wrapper {
   min-height: 120px;
-  background-color: $xapp-green;
+  background-color: $xapp-blue-light;
   margin-bottom: 10px;
+  background-image: url("/img/background-light.png");
+  background-size: 80px;
 }
 
 .guide-header {
