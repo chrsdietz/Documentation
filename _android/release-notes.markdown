@@ -5,6 +5,10 @@ categories:
   - Android
 ---
 
+### 3.10.4 (1-26-2016)
+
+*  Fix for trying to upload a bitmap without valid width/height
+
 ### 3.10.3 (12-14-2015)
 
 *  XAA-657 Remote Logging URL configurable
