@@ -7,9 +7,9 @@ categories:
  - documentation
 ---
 
-Static site generators have been around for awhile.  They have a great number of use cases but why are they the right choice for *developer.xappmedia.com*?
+Static site generators have been around for a while.  They have a great number of use cases but why are they the right choice for *developer.xappmedia.com*?
 
-<!-- more -->
+<!--more-->
 
 ### Leverage Existing Workflow
 
