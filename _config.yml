@@ -14,8 +14,6 @@ android_api_current: /android/api
 
 # Collections
 collections:
-  authors:
-    output: true
   ios:
     output: true
   android:
