@@ -16,7 +16,7 @@ Write your content in markdown, jekyll then converts it to HTML based on predefi
   - `$ bower install`
 1. Serve locally
   - `$ jekyll serve`
-  - Open <a href="http://localhost:4000/" target="_blank">localhost:4000</a>
+  - Open [localhost:4000](http://localhost:4000/) in your browser
 1. Make your changes
   - See the style-guide.markdown for example markdown
 1. Commit and create a pull request
