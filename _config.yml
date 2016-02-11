@@ -7,6 +7,7 @@ url: "http://developer.xappmedia.com" # the base hostname & protocol for your si
 twitter_username: xappmedia
 github_username:  xappmedia
 source_repository: https://github.com/XappMedia/Documentation
+excerpt_separator: <!--more-->
 
 # API Variables
 ios_api_current: /ios/api
@@ -24,7 +25,7 @@ collections:
 markdown: redcarpet
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
 
-permalink: pretty
+permalink: /articles/:year/:month/:day/:title/
 
 redcarpet:
   extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]

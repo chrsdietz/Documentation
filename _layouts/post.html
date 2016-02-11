@@ -2,36 +2,39 @@
 layout: page
 sdk_agreement: false
 ---
-<!-- Look the author details up from the site config. -->
-{% assign author = site.data.author[page.author] %}
 
-<div class="container">
-  <div class="row">
-      <header class="post-header">
-        <h1 class="post-title">{{ page.title }}</h1>
-        <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if author %} • {{ author.name }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-      </header>
-    <!-- Main Content -->
-    <article class="col-md-12 xm-docs-main" role="main">
-      {{ content }}
-    </article>
-    <!-- /main content -->
-  </div>
-  <!-- /row -->
+{% assign author = site.data.authors[page.author] %}
 
-<div class="row">
-    <!-- Output author details if some exist. -->
+<div class="container" style="padding-top: 40px;">
+    <div class="row">
+        <!-- Main Content -->
+        <article class="col-md-12 xm-docs-main" role="main">
+            {{ content }}
+        </article>
+        <!-- /main content -->
+    </div>
+    <!-- /row -->
+
     {% if author %}
-        <span>
+    <!-- Output author details if they exist. -->
+    <div class="row author-info">
+        <div class="col-md-2 col-md-offset-3">
             <!-- Mugshot. -->
-            <img src="{{ author.email | to_gravatar }}" alt="A photo of {{ author.name }}" />
-
+            <img class="img-circle" src="{{ author.email | to_gravatar }}" alt="A photo of {{ author.name }}" />
+        </div>
+        <div class="col-md-2">
             <!-- Personal Info. -->
-            Written by <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
-        </span>
+            {% if author.web %}
+            <a class="author-name" href="{{ author.web }}" target="_blank">{{ author.name }}</a>
+            {% else %}
+            <p class="author-name">{{ author.name }}</p>
+            {% endif %}
+
+            {% if author.title %}
+            <p class="author-title">{{ author.title }}</p>
+            {% endif %}
+        </div>
+    </div>
     {% endif %}
-</div>
-
-
 </div>
 <!-- /container -->

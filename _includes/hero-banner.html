@@ -1,9 +1,23 @@
+
+{% assign author = site.data.authors[page.author] %}
+
 <div class="guide-header-wrapper" {% if page.header_background_color %} style="background-color:{{page.header_background_color}};" {% endif %}>
    <div class="container">
-     <h1 class="guide-header">{{page.title}}</h1>
-     <ul class="list-inline">
-       {% for category in page.categories %}
-        <li><span class="label label-default">{{category}}</span></li>
-       {% endfor %}
-   </div>
+      <div class="row">
+          <div class="col-md-6">
+              <h1 class="guide-header">{{page.title}}</h1>
+              {% if author %}
+              <p class="post-meta" style="margin-top: -40px; margin-left: 50px;">{{ page.date | date: "%b %-d, %Y" }}{% if author %} • {{ author.name }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+              {% endif %}
+          </div>
+     </div>
+     <div class="row">
+         <div class="col-md-6">
+             <ul class="list-inline">
+               {% for category in page.categories %}
+                <li><span class="label label-default">{{category}}</span></li>
+               {% endfor %}
+             </div>
+         </div>
+     </div>
 </div>

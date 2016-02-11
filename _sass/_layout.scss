@@ -81,7 +81,7 @@ li {
  */
 
 .guide-header-wrapper {
-  min-height: 120px;
+  min-height: 150px;
   background-color: $xapp-blue-light;
   margin-bottom: 10px;
   background-image: url("/img/background-light.png");
@@ -242,3 +242,25 @@ li {
     display: block;
     font-size: 24px;
 }
+
+.post-excerpt {
+    font-size: 12px;
+    color: $grey-color-dark;
+}
+
+/**
+ *  Author Style
+ */
+ .author-info {
+     margin-top: 40px;
+     margin-bottom: 40px;
+     padding: 10px;
+ }
+
+ .author-name {
+     color: $grey-color-dark;
+ }
+
+ .author-title {
+     color: $grey-color;
+ }
