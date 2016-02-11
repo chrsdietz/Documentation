@@ -1,5 +1,7 @@
 ---
-layout: page-with-sidebar
+layout: page
+sidebar: true
+sdk_agreement: true
 title: Preparing for iOS 9
 categories:
  - iOS

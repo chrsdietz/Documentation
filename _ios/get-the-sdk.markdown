@@ -1,5 +1,7 @@
 ---
-layout: page-with-sidebar
+layout: page
+sidebar: true
+sdk_agreement: true
 title: Get the SDK
 summary: The different ways to integrate the SDK to your project
 categories:

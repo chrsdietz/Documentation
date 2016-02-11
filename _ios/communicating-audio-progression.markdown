@@ -1,12 +1,11 @@
 ---
-layout: page-with-sidebar
+layout: page
+sidebar: true
+sdk_agreement: true
 title: Communicating Audio Progression
 categories:
  - iOS
 ---
-<div class="alert alert-info" role="alert">
-  <b>Note</b> This is for a feature of the SDK that is not yet released
-</div>
 
 # Progress Bar
 

@@ -1,5 +1,6 @@
 ---
 layout: page
+sdk_agreement: true
 title: XAPP SDK iOS Release Notes
 categories:
   - iOS

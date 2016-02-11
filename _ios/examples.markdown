@@ -11,10 +11,11 @@ You can find the project on [github](https://github.com/XappMedia/XAPP-Example-i
 
 <br/>
 
+<!-- WXAP is temporarily unavailable 
 # WXAP Radio
 
 ![WXAP Radio](/img/WXAP.png)
 
 A basic example of how to use XAPPs within your live stream.
 
-You can find the project on [github](https://github.com/XappMedia/WXAP-iOS)
+You can find the project on [github](https://github.com/XappMedia/WXAP-iOS) -->
