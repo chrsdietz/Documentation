@@ -5,7 +5,7 @@ title: Contributing
 
 ## Basics
 
-Write your content in markdown, jekyll then converts it to HTML based on predefined templates.
+Write your content in markdown, Jekyll then converts it to HTML based on predefined templates.
 
 ## Getting Started
 
