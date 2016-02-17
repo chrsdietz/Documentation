@@ -1,5 +1,7 @@
 ---
-layout: page-with-sidebar
+layout: page
+sidebar: true
+sdk_agreement: true
 title: Quick Start
 summary: Everything you need to know to serve a XAPP on Android
 categories:

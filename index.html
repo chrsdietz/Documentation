@@ -1,24 +1,21 @@
 ---
-layout: default
+layout: master-layout
 title: Welcome
 ---
+{% include hero-banner.html %}
 
 <div class="container landing-wrapper">
 
-  <div class="panel panel-default">
-  <div class="panel-body" style="background-color:#80F290;">
-    <h3 style="font-size: 1.5em;">We are glad you are here!<h3>
+    <div class="panel panel-default">
+        <div class="panel-body" style="background-color:#80F290;">
+            <h3 style="font-size: 1.5em;">We are glad you are here!<h3>
     <p style="font-size: 0.7em;">Before you get started please make sure you read and understand the <a href="http://xappmedia.com/xapp-sdk/sdk-terms/" class="alert-link">XAPP SDK Terms of Service and License Agreement</a>, which governs your usage of the XAPP SDK</p>
   </div>
 </div>
 
   <div class="row">
-    <h1>SDK Documentation</h1>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-4 col-lg-offset-1">
-      <h2>iOS <i class="fa fa-apple pull-right"></i></h2>
+    <div class="col-md-5 col-lg-5">
+      <h2>iOS SDK <i class="fa fa-apple pull-right"></i></h2>
       <div class="list-group">
         <a class="list-group-item" href="/ios/quick-start"><i class="fa fa-bolt fa-fw"></i>&nbsp; Quick Start</a>
         <a class="list-group-item" href="/ios/guides"><i class="fa fa-book fa-fw"></i>&nbsp; Guides</a>
@@ -26,9 +23,8 @@ title: Welcome
         <a class="list-group-item" href="/ios/examples"><i class="fa fa-code fa-fw"></i>&nbsp; Examples</a>
       </div>
     </div>
-    <!-- /.col-lg-4 -->
-    <div class="col-lg-4 col-lg-offset-1">
-      <h2>Android <i class="fa fa-android pull-right"></i></h2>
+    <div class="col-md-5 col-md-offset-1 col-lg-5">
+      <h2>Android SDK <i class="fa fa-android pull-right"></i></h2>
       <div class="list-group">
         <a class="list-group-item" href="/android/quick-start"><i class="fa fa-bolt fa-fw"></i>&nbsp; Quick Start</a>
         <a class="list-group-item" href="/android/guides"><i class="fa fa-book fa-fw"></i>&nbsp; Guides</a>
@@ -36,15 +32,11 @@ title: Welcome
         <a class="list-group-item" href="/android/examples"><i class="fa fa-code fa-fw"></i>&nbsp; Examples</a>
       </div>
     </div>
-    <!-- /.col-lg-4 -->
   </div>
 
   <div class="row">
-    <h1>Integration Concepts</h1>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-9 col-lg-offset-1">
+    <div class="col-md-5 col-lg-5">
+      <h2>Integration Concepts</h2>
       <div class="list-group">
         <a href="/guides/custom-actions" class="list-group-item">
           <h4 class="list-group-item-heading">Custom Actions</h4>
@@ -52,6 +44,23 @@ title: Welcome
         </a>
       </div>
     </div>
+    <div class="col-md-5 col-md-offset-1 col-lg-5">
+      <h2> Articles </h2>
+      <div class="list-group">
+      {% for post in site.posts limit:3 %}
+          <a href="{{ post.url | prepend: site.baseurl }}" class="list-group-item">
+            <h4 class="list-group-item-heading">{{ post.title }}</h4>
+            <p class="list-group-item-text">{{ post.date | date: "%b %-d, %Y" }}</p>
+          </a>
+      {% endfor %}
+      <a href="/articles" class="list-group-item">
+        <h4 class="list-group-item-heading">More Articles</h4>
+        <p class="list-group-item-text">See the complete list</p>
+      </a>
+      </div>
+    </div>
   </div>
+
+
 </div>
 <!-- /container -->

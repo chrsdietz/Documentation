@@ -1,9 +1,24 @@
 ---
 layout: page
+sdk_agreement: true
 title: XAPP SDK iOS Release Notes
 categories:
   - iOS
 ---
+
+## 3.12.0 (1-29-2016)
+
+* XAI-680 Minimum Creative Load for Playback to return successful Ad Request
+* XAI-717 Image Loading During Listening Period Causes Microphone Animation to Disappear
+* XAI-799 Streaming Adapter
+* XAI-825 Midroll Harness fixes(tab icon, stop player, ad status text, public stream url, background playing capability)
+* XAI-827 In-Tuner Tile Lazy Load Images doesn't Update Tile with Image
+* XAI-838 Image not loading on iPhone 4s Full Screen Interstitial
+* XAI-841 Refactor Advertisement Loading For New Ad Type
+* XAI-861 Provide a root View Controller for Audio Only Playback
+* XAI-868 API Tuning for Streaming Adapter
+* XAI-871 Audio stream cannot be heard after restarting a session but can hear the beep
+* XAI-885 Remove pause and remove restart from streaming adapter delegate.
 
 ## 3.11.1-thick (10-28-2015)
 

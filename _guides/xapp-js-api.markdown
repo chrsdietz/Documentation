@@ -1,10 +1,13 @@
 ---
-layout: page-with-sidebar
+layout: page
+sidebar: true
+sdk_agreement: true
 title: XAPP.js API
 categories:
   - SDK
   - iOS
   - Android
+
 ---
 
 <div class="alert alert-danger"><strong>Warning:</strong> XAPP.js is still undergoing development and the API is subject to change.  This documentation is for XAPP internal use only.</div>
