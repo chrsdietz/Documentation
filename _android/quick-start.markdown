@@ -19,7 +19,9 @@ repositories {
 }
 
 dependencies {
-      compile 'com.xappmedia:xapp-ads:3.10.3'
+    compile ('com.xappmedia:xapp-ads:3.11.0@aar') {
+     transitive = true
+    }
 }
 
 ```
