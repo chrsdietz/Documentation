@@ -19,12 +19,33 @@ repositories {
 }
 
 dependencies {
-      compile 'com.xappmedia:xapp-ads:3.10.3'
+    compile ('com.xappmedia:xapp-ads:3.11.0@aar') {
+     transitive = true
+    }
 }
 
 ```
 
-Your credentials for accessing the repos will be provided to you.
+### Duplicate files copied in APK META-INF/LICENSE Error
+
+If you get the following error:
+
+```
+Error:Execution failed for task ':app:packageDebug'.
+> Duplicate files copied in APK META-INF/LICENSE
+  	File 1: /Users/user/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.4.3/4cb3dbb0c2f75b51aa7543c53252989785a0c609/jackson-core-2.4.3.jar
+  	File 2: /Users/user/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.4.3/4cb3dbb0c2f75b51aa7543c53252989785a0c609/jackson-core-2.4.3.jar
+```
+
+Please add to your `android` namespace to the module's `build.gradle` file:
+
+```groovy
+packagingOptions {
+    exclude 'META-INF/NOTICE' // will not include NOTICE file
+    exclude 'META-INF/LICENSE' // will not include LICENSE file
+}
+```
+
 
 # AndroidManifest.xml Modifications
 
