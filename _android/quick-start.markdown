@@ -199,6 +199,33 @@ xappAds.requestAd(adRequest);
 
 The `XappAdsListener` method `onAdRequestCompleted` will be called when the ad is ready for playback.
 
+# Permissions API
+
+Since the introduction of Android Marshmellow (API 23), applications are no longer automatically granted the permissions they request on install.  The SDK itself does not request for these permissions if they are not granted.  Instead it will produce the appropriate error and not initialize.  
+
+While optional, the Xapp SDK has a new Permissions API that can be used to easily request permissions from the user. 
+
+The first method of requesting permissions is to use the heaviliy named `RequestPermissionsSoftAskActivity` class. This is a simple `AppCompatActivity` which will produce a dialog to show the user to request permissions. To  use this `Activity`, first declare it in the project's `AndroidManifest.xml` file like so:
+
+```<activity
+            android:name="xappmedia.sdk.permissions.ui.RequestPermissionsSoftAskActivity"/>
+```
+
+Then provide the collection of permission names to request, for example:
+
+```
+Permission recordPermission = Permission.newPermission(Manifest.permission.RECORD_AUDIO)
+                                        .rationale("This app would like to use the microphone to listen for Xapp playback.")
+                                        .imageResourceDrawable(R.drawable.record_image)
+                                        .build();
+
+List<Permission> permissions = new ArrayList();
+permissions.add(recordPermission);
+RequestPermissionsSoftAskActivity.requestPermission(getActivity(), collection, REQUEST_PERMISSIONS);
+```
+
+Then the Activity will present a prompt with the given rationale asking the user for the permission. The Activity accepts a collection of `Permissions` so it is possible to include multiple permissions at once.  If the user accepts, then the Android system prompt will be displayed to actually grant the permissions. The Activity will immediately return if all permissions have already been granted previously.
+
 # Important Notes
 
 It is important that the Context and `XappAdsListener` provided are
