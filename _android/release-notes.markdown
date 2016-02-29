@@ -5,6 +5,11 @@ categories:
   - Android
 ---
 
+### 3.11.0 (2-29-2016)
+
+*  Release Note 1
+*  Release Note 2
+
 ### 3.10.4 (1-26-2016)
 
 *  Fix for trying to upload a bitmap without valid width/height
