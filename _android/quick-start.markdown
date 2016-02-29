@@ -37,7 +37,7 @@ Error:Execution failed for task ':app:packageDebug'.
   	File 2: /Users/user/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.4.3/4cb3dbb0c2f75b51aa7543c53252989785a0c609/jackson-core-2.4.3.jar
 ```
 
-Please add to your `android` namespace:
+Please add to your `android` namespace to the module's `build.gradle` file:
 
 ```groovy
 packagingOptions {
