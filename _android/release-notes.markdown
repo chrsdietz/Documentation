@@ -7,8 +7,13 @@ categories:
 
 ### 3.11.0 (2-29-2016)
 
-*  Release Note 1
-*  Release Note 2
+*  Main SDK has new safeguards for apps that have not been granted "dangerous" permissions 
+*  Adding new Permissions api (xappmedia.sdk.permissions) to make it easier to request permissions from user.
+*  XAA-675, 679 Improved web browser implementation for conversion ads.
+*  XAA-662 DFP ads are now treated similarly to regular ads for more consistent feel.
+*  XAA-551 Ad tracking has been fixed.
+*  XAA-666 Background reporting has been fixed.
+*  XAA-639 No longer requesting WRITE_PERMISSIONS (this was not needed before, but permission was still there).
 
 ### 3.10.4 (1-26-2016)
 
