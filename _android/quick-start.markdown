@@ -19,7 +19,7 @@ repositories {
 }
 
 dependencies {
-    compile ('com.xappmedia:xapp-ads:3.11.0@aar') {
+    compile ('com.xappmedia:xapp-ads:3.11.1@aar') {
      transitive = true
     }
 }
@@ -203,7 +203,7 @@ The `XappAdsListener` method `onAdRequestCompleted` will be called when the ad i
 
 Since the introduction of Android Marshmellow (API 23), applications are no longer automatically granted the permissions they request on install.  The SDK itself does not request for these permissions if they are not granted.  Instead it will produce the appropriate error and not initialize.  
 
-While optional, the Xapp SDK has a new Permissions API that can be used to easily request permissions from the user. 
+While optional, the Xapp SDK has a new Permissions API that can be used to easily request permissions from the user.
 
 The first method of requesting permissions is to use the heaviliy named `RequestPermissionsSoftAskActivity` class. This is a simple `AppCompatActivity` which will produce a dialog to show the user to request permissions. To  use this `Activity`, first declare it in the project's `AndroidManifest.xml` file like so:
 
