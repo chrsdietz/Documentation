@@ -5,9 +5,13 @@ categories:
   - Android
 ---
 
+## 3.11.1 (3-2-2016)
+
+ * Fix for crash that can occur on devices that do not have bluetooth available.
+
 ### 3.11.0 (2-29-2016)
 
-*  Main SDK has new safeguards for apps that have not been granted "dangerous" permissions 
+*  Main SDK has new safeguards for apps that have not been granted "dangerous" permissions
 *  Adding new Permissions api (xappmedia.sdk.permissions) to make it easier to request permissions from user.
 *  XAA-675, 679 Improved web browser implementation for conversion ads.
 *  XAA-662 DFP ads are now treated similarly to regular ads for more consistent feel.
